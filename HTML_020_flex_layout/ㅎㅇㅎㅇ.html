@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #n1 ul li {
+        display: inline;
+        text-decoration: none;
+      }
+      #n1 {
+        background-color: black;
+        color: white;
+      }
+
+      nav#n2 ul li {
+        display: inline;
+        text-decoration: none;
+      }
+      nav#n2 {
+        display: flex;
+        background-color: none;
+        color: black;
+        display: none;
+      }
+
+      .fix {
+        position: fixed;
+        width: auto;
+        animation: down 0.5s ease;
+      }
+
+      @keyframes down {
+        0% {
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const n1height = header.clientHeight;
+
+        document.addEventListener("scroll", onScroll, { passive: true });
+
+        function onScroll() {
+          const scrollpositon = pageYOffset;
+
+          const nav = document.querySelector("nav.nav2");
+
+          if (n1height <= scrollpositon) {
+            nav.classList.add("fix");
+            document.getElementById("n2").style.display = "block";
+          } else {
+            nav.classList.remove("fix");
+            document.getElementById("n2").style.display = "none";
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="n1">
+        <ul>
+          <li>ㅎㅇㅎㅇ</li>
+          <li>ㅎㅇㅇ</li>
+          <li>ㅇㅇ</li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav id="n2" class="nav2">
+      <ul>
+        <li>안녕하세요 저는 네비게이션임, 스크롤내리면 나타남</li>
+      </ul>
+    </nav>
+
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+    <h2>ㅇㅇ</h2>
+  </body>
+</html>
