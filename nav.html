@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d9b9bbc6a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        font-family: "Noto Sans KR", sans-serif;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul div.A {
+        list-style: none;
+      }
+
+      nav ul div.A:hover {
+        cursor: pointer;
+      }
+
+      nav ul div.B {
+        list-style: none;
+      }
+      nav ul div.B:hover {
+        cursor: pointer;
+      }
+
+      header {
+        font-family: "Noto Sans KR", sans-serif;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 70%;
+        margin: 40px auto;
+      }
+
+      header input.text {
+        border: 3px solid black;
+        outline: none;
+        font-size: 16px;
+        width: 470px;
+        padding: 14px;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: 3px;
+      }
+
+      header h2#logo {
+        font-size: 40px;
+        margin-left: -800px;
+      }
+
+      header i {
+        cursor: pointer;
+        font-size: 35px;
+        display: inline-block;
+        position: absolute;
+      }
+
+      header i#icon {
+        margin-right: -200px;
+        margin-top: 10px;
+        position: absolute;
+      }
+      header i#user {
+        margin-right: -700px;
+        margin-top: 7px;
+      }
+      header i#cart {
+        margin-right: -800px;
+        margin-top: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 id="logo">말랑</h2>
+      <input
+        type="text"
+        placeholder="찾고싶은 상품을 검색하세요"
+        class="text"
+      />
+      <i class="fas fa-search" id="icon"></i>
+      <i class="fas fa-user" id="user"></i>
+      <i class="fas fa-shopping-cart" id="cart"></i>
+    </header>
+
+    <nav>
+      <ul>
+        <div class="A">
+          <li>일러스트</li>
+          <li>수공예</li>
+          <li>수제간식</li>
+          <li>반려동물용품</li>
+          <li>실시간 후기</li>
+          <li>이용안내</li>
+        </div>
+
+        <div class="B">
+          <li>로그인</li>
+          <li>회원가입</li>
+          <li>고객센터</li>
+        </div>
+      </ul>
+    </nav>
+  </body>
+</html>
